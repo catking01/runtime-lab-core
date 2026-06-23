@@ -53,11 +53,15 @@ Live provider tests are not run by default. The public validation profile exclud
 
 ## Evidence Summary
 
-This package is generated from the R135 public-core extraction manifest after the R135C dependency repair and R135E Apache-2.0 license approval record. The package hash manifest and validation results are generated before any public repository publication.
+This package is generated from the R135 public-core extraction manifest after the R135C dependency repair and R135E Apache-2.0 license approval record.
+
+The public repository is published at `https://github.com/catking01/runtime-lab-core`. Public CI has passed for commit `f7756624e99b2786336529d870cf8b534ac91a39`, and annotated tag `public-core-r135g-s2` peels to that commit. No GitHub release has been published.
+
+This evidence does not claim production readiness, autonomous or general coding-agent capability, Codex or Claude Code equivalence, security certification, patent clearance, or publication of the private `runtime_lab` repository as a whole.
 
 ## Maintainer Workflow
 
-Start from a clean prepublication package, run the validation commands, inspect the package hash manifest, check publication blockers, and only then proceed to a separate publication authorization gate.
+Start from a clean public checkout, run the validation commands, inspect the public manifests and CI result, and preserve the non-claim boundary. Creating a GitHub release requires a separate release authorization gate.
 
 ## License
 
