@@ -1,0 +1,9 @@
+{
+  "autonomous_general_coding_agent_capability": false,
+  "codex_or_claude_code_equivalence": false,
+  "private_runtime_lab_repo_as_whole": false,
+  "production_readiness": false,
+  "public_ci": false,
+  "remote_sealed_pass": false,
+  "schema_version": "1.0"
+}

@@ -1,0 +1,69 @@
+{
+  "action_type": "write_text_artifact",
+  "artifact_expectation": [],
+  "audit_binding": {
+    "evidence_status": "local_only",
+    "required_audit_trail": [
+      "descriptor_acceptance"
+    ]
+  },
+  "authority_binding": {
+    "required_grants": [
+      "null_descriptor_scope"
+    ]
+  },
+  "canonical_hash": "user-auth-hash",
+  "capability_boundary": {
+    "allowed_actions": [
+      "write_text_artifact"
+    ]
+  },
+  "descriptor_id": "user-auth-id",
+  "descriptor_version": "stage_b1.v1",
+  "determinism_level": "STRICT",
+  "governance_requirements": {
+    "required_predicates": [
+      "human_review_required"
+    ]
+  },
+  "identity_binding": {
+    "identity_fields": [
+      "descriptor_version",
+      "task_ref",
+      "state_ref"
+    ]
+  },
+  "logical_clock": "b1-0008",
+  "non_claims": [
+    "implementation not verified yet"
+  ],
+  "replay_binding": {
+    "mode": "descriptor_only",
+    "replay_signature_fields": [
+      "canonical_hash",
+      "logical_clock"
+    ]
+  },
+  "state_ref": {
+    "state_id": "state-001"
+  },
+  "task_ref": {
+    "task_id": "task-001"
+  },
+  "transition_intent": {
+    "target": "artifact_only",
+    "type": "declare_output"
+  },
+  "validation_requirements": {
+    "fail_closed": true,
+    "required_validators": [
+      "schema_shape"
+    ]
+  },
+  "workspace_boundary": {
+    "allowed_roots": [
+      "artifacts/"
+    ],
+    "mode": "single_root"
+  }
+}

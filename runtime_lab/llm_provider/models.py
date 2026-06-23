@@ -1,0 +1,25 @@
+"""Shared constants for R123 LLM provider receipts."""
+
+from __future__ import annotations
+
+VALID_JSON_EXACT = "VALID_JSON_EXACT"
+VALID_JSON_EXTRA_TEXT = "VALID_JSON_EXTRA_TEXT"
+NON_JSON_RESPONSE = "NON_JSON_RESPONSE"
+PROVIDER_ERROR = "PROVIDER_ERROR"
+TIMEOUT = "TIMEOUT"
+CONTENT_FILTER = "CONTENT_FILTER"
+MALFORMED_RESPONSE = "MALFORMED_RESPONSE"
+TOOL_CALL_PROPOSAL_REJECTED = "TOOL_CALL_PROPOSAL_REJECTED"
+
+PROVIDER_ROLES = [
+    "TEST_LLM_PROVIDER",
+    "LLM_PROVIDER_ADAPTER_CANDIDATE",
+    "RECEIPT_BOUND_MODEL_INVOCATION_PROVIDER",
+]
+
+NON_EXECUTION_FLAGS = {
+    "tool_calls_sent": False,
+    "tool_calls_executed": False,
+    "executor_dispatch_started": False,
+    "workspace_mutation_started": False,
+}

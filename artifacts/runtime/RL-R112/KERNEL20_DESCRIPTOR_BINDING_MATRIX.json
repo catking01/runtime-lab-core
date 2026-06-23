@@ -1,0 +1,167 @@
+[
+  {
+    "name": "Schema",
+    "status": "descriptor_only",
+    "descriptor_binding_fields": [
+      "descriptor_version",
+      "notes",
+      "compatibility_refs",
+      "identity_fields"
+    ],
+    "evidence_path": "runtime_lab/descriptors/schema.py",
+    "test_path": "tests/descriptors/test_stage_b1_descriptor_schema.py",
+    "gap_reason": null
+  },
+  {
+    "name": "Task",
+    "status": "descriptor_only",
+    "descriptor_binding_fields": ["task_ref"],
+    "evidence_path": "runtime_lab/descriptors/validator.py",
+    "test_path": "tests/descriptors/test_stage_b1_descriptor_schema.py",
+    "gap_reason": null
+  },
+  {
+    "name": "Identity",
+    "status": "descriptor_only",
+    "descriptor_binding_fields": ["identity_binding"],
+    "evidence_path": "runtime_lab/descriptors/validator.py",
+    "test_path": "tests/descriptors/test_r111_s2_spine_contract.py",
+    "gap_reason": null
+  },
+  {
+    "name": "Authority",
+    "status": "descriptor_only",
+    "descriptor_binding_fields": ["authority_binding", "capability_boundary"],
+    "evidence_path": "runtime_lab/descriptors/validator.py",
+    "test_path": "tests/descriptors/test_stage_b1_descriptor_schema.py",
+    "gap_reason": null
+  },
+  {
+    "name": "Actor Lifecycle",
+    "status": "descriptor_only",
+    "descriptor_binding_fields": ["state_ref", "transition_intent"],
+    "evidence_path": "runtime_lab/descriptors/spine_adapter.py",
+    "test_path": "tests/descriptors/test_r111_s3_spine_adapter.py",
+    "gap_reason": null
+  },
+  {
+    "name": "State",
+    "status": "descriptor_only",
+    "descriptor_binding_fields": ["state_ref"],
+    "evidence_path": "runtime_lab/descriptors/spine_adapter.py",
+    "test_path": "tests/descriptors/test_r111_s3_spine_adapter.py",
+    "gap_reason": null
+  },
+  {
+    "name": "Transition",
+    "status": "descriptor_only",
+    "descriptor_binding_fields": ["transition_intent"],
+    "evidence_path": "runtime_lab/descriptors/spine_adapter.py",
+    "test_path": "tests/descriptors/test_r111_s3_spine_adapter.py",
+    "gap_reason": null
+  },
+  {
+    "name": "Audit",
+    "status": "descriptor_only",
+    "descriptor_binding_fields": ["audit_binding"],
+    "evidence_path": "runtime_lab/descriptors/spine_adapter.py",
+    "test_path": "tests/descriptors/test_r111_s3_spine_adapter.py",
+    "gap_reason": null
+  },
+  {
+    "name": "Clock",
+    "status": "descriptor_only",
+    "descriptor_binding_fields": ["logical_clock"],
+    "evidence_path": "runtime_lab/descriptors/schema.py",
+    "test_path": "tests/descriptors/test_stage_b1_descriptor_schema.py",
+    "gap_reason": null
+  },
+  {
+    "name": "Scheduler",
+    "status": "unsupported",
+    "descriptor_binding_fields": ["minimal_spine"],
+    "evidence_path": null,
+    "test_path": null,
+    "gap_reason": "Kernel20 scheduler primitive has not been implemented in this repository stage."
+  },
+  {
+    "name": "Handoff",
+    "status": "unsupported",
+    "descriptor_binding_fields": ["handoff"],
+    "evidence_path": null,
+    "test_path": null,
+    "gap_reason": "Kernel20 handoff primitive is out-of-scope in R112 and remains unresolved."
+  },
+  {
+    "name": "Tool",
+    "status": "planned",
+    "descriptor_binding_fields": ["capability_boundary", "notes"],
+    "evidence_path": null,
+    "test_path": null,
+    "gap_reason": "Tool primitive requires a registered tool invocation layer not introduced in R112."
+  },
+  {
+    "name": "LLM",
+    "status": "planned",
+    "descriptor_binding_fields": ["notes", "non_claims"],
+    "evidence_path": null,
+    "test_path": null,
+    "gap_reason": "LLM primitive requires model invocation capability excluded in current scope."
+  },
+  {
+    "name": "Executor",
+    "status": "noop_only",
+    "descriptor_binding_fields": ["executor_eligibility", "governance_requirements"],
+    "evidence_path": "runtime_lab/descriptors/noop_bridge.py",
+    "test_path": "tests/descriptors/test_r111_s4d_noop_bridge.py",
+    "gap_reason": null
+  },
+  {
+    "name": "Workspace",
+    "status": "descriptor_only",
+    "descriptor_binding_fields": ["workspace_boundary"],
+    "evidence_path": "runtime_lab/descriptors/validator.py",
+    "test_path": "tests/descriptors/test_stage_b1_descriptor_schema.py",
+    "gap_reason": null
+  },
+  {
+    "name": "Resource",
+    "status": "unsupported",
+    "descriptor_binding_fields": ["resource_refs"],
+    "evidence_path": null,
+    "test_path": null,
+    "gap_reason": "Resource primitive requires artifact store and runtime state plumbing not introduced in R112."
+  },
+  {
+    "name": "Security",
+    "status": "unsupported",
+    "descriptor_binding_fields": ["identity_binding", "capability_boundary"],
+    "evidence_path": null,
+    "test_path": null,
+    "gap_reason": "Security primitive requires runtime enforcement and policy evaluator not introduced in R112."
+  },
+  {
+    "name": "Artifact",
+    "status": "descriptor_only",
+    "descriptor_binding_fields": ["artifact_expectation", "validation_requirements"],
+    "evidence_path": "runtime_lab/descriptors/schema.py",
+    "test_path": "tests/descriptors/test_stage_b1_descriptor_schema.py",
+    "gap_reason": null
+  },
+  {
+    "name": "Validation",
+    "status": "descriptor_only",
+    "descriptor_binding_fields": ["validation_requirements"],
+    "evidence_path": "runtime_lab/descriptors/schema.py",
+    "test_path": "tests/descriptors/test_stage_b1_descriptor_schema.py",
+    "gap_reason": null
+  },
+  {
+    "name": "Governance",
+    "status": "descriptor_only",
+    "descriptor_binding_fields": ["governance_requirements"],
+    "evidence_path": "runtime_lab/descriptors/schema.py",
+    "test_path": "tests/descriptors/test_stage_b1_descriptor_schema.py",
+    "gap_reason": null
+  }
+]

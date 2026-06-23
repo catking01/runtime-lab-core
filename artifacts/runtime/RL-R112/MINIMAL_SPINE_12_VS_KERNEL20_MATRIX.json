@@ -1,0 +1,224 @@
+{
+  "milestone": "R112_KERNEL20_BINDING_RECONCILIATION",
+  "artifact_type": "Minimal Spine 12 versus Kernel20 matrix",
+  "generated_at_utc": "2026-06-16T18:10:33Z",
+  "minimal_spine_12": [
+    "Identity",
+    "Transition",
+    "Task",
+    "Executor",
+    "Replay",
+    "Workspace",
+    "Validation",
+    "Artifact",
+    "State",
+    "Audit",
+    "Governance",
+    "Authority"
+  ],
+  "kernel20_primitives": [
+    "Schema",
+    "Task",
+    "Identity",
+    "Authority",
+    "Actor Lifecycle",
+    "State",
+    "Transition",
+    "Audit",
+    "Clock",
+    "Scheduler",
+    "Handoff",
+    "Tool",
+    "LLM",
+    "Executor",
+    "Workspace",
+    "Resource",
+    "Security",
+    "Artifact",
+    "Validation",
+    "Governance"
+  ],
+  "minimal_spine_12_count": 12,
+  "kernel20_count": 20,
+  "alignment_rows": [
+    {
+      "kernel20_primitive": "Schema",
+      "in_minimal_spine_12": false,
+      "coverage_scope": "kernel20_only",
+      "status": "not_mapped_in_minimal"
+    },
+    {
+      "kernel20_primitive": "Task",
+      "in_minimal_spine_12": true,
+      "coverage_scope": "minimal_included",
+      "status": "mapped"
+    },
+    {
+      "kernel20_primitive": "Identity",
+      "in_minimal_spine_12": true,
+      "coverage_scope": "minimal_included",
+      "status": "mapped"
+    },
+    {
+      "kernel20_primitive": "Authority",
+      "in_minimal_spine_12": true,
+      "coverage_scope": "minimal_included",
+      "status": "mapped"
+    },
+    {
+      "kernel20_primitive": "Actor Lifecycle",
+      "in_minimal_spine_12": false,
+      "coverage_scope": "kernel20_only",
+      "status": "not_mapped_in_minimal"
+    },
+    {
+      "kernel20_primitive": "State",
+      "in_minimal_spine_12": true,
+      "coverage_scope": "minimal_included",
+      "status": "mapped"
+    },
+    {
+      "kernel20_primitive": "Transition",
+      "in_minimal_spine_12": true,
+      "coverage_scope": "minimal_included",
+      "status": "mapped"
+    },
+    {
+      "kernel20_primitive": "Audit",
+      "in_minimal_spine_12": true,
+      "coverage_scope": "minimal_included",
+      "status": "mapped"
+    },
+    {
+      "kernel20_primitive": "Clock",
+      "in_minimal_spine_12": false,
+      "coverage_scope": "kernel20_only",
+      "status": "not_mapped_in_minimal"
+    },
+    {
+      "kernel20_primitive": "Scheduler",
+      "in_minimal_spine_12": false,
+      "coverage_scope": "kernel20_only",
+      "status": "not_mapped_in_minimal"
+    },
+    {
+      "kernel20_primitive": "Handoff",
+      "in_minimal_spine_12": false,
+      "coverage_scope": "kernel20_only",
+      "status": "not_mapped_in_minimal"
+    },
+    {
+      "kernel20_primitive": "Tool",
+      "in_minimal_spine_12": false,
+      "coverage_scope": "kernel20_only",
+      "status": "not_mapped_in_minimal"
+    },
+    {
+      "kernel20_primitive": "LLM",
+      "in_minimal_spine_12": false,
+      "coverage_scope": "kernel20_only",
+      "status": "not_mapped_in_minimal"
+    },
+    {
+      "kernel20_primitive": "Executor",
+      "in_minimal_spine_12": true,
+      "coverage_scope": "minimal_included",
+      "status": "mapped"
+    },
+    {
+      "kernel20_primitive": "Workspace",
+      "in_minimal_spine_12": true,
+      "coverage_scope": "minimal_included",
+      "status": "mapped"
+    },
+    {
+      "kernel20_primitive": "Resource",
+      "in_minimal_spine_12": false,
+      "coverage_scope": "kernel20_only",
+      "status": "not_mapped_in_minimal"
+    },
+    {
+      "kernel20_primitive": "Security",
+      "in_minimal_spine_12": false,
+      "coverage_scope": "kernel20_only",
+      "status": "not_mapped_in_minimal"
+    },
+    {
+      "kernel20_primitive": "Artifact",
+      "in_minimal_spine_12": true,
+      "coverage_scope": "minimal_included",
+      "status": "mapped"
+    },
+    {
+      "kernel20_primitive": "Validation",
+      "in_minimal_spine_12": true,
+      "coverage_scope": "minimal_included",
+      "status": "mapped"
+    },
+    {
+      "kernel20_primitive": "Governance",
+      "in_minimal_spine_12": true,
+      "coverage_scope": "minimal_included",
+      "status": "mapped"
+    }
+  ],
+  "minimal_spine_rows": [
+    {
+      "primitive": "Identity",
+      "role": "minimal_spine_12_field"
+    },
+    {
+      "primitive": "Transition",
+      "role": "minimal_spine_12_field"
+    },
+    {
+      "primitive": "Task",
+      "role": "minimal_spine_12_field"
+    },
+    {
+      "primitive": "Executor",
+      "role": "minimal_spine_12_field"
+    },
+    {
+      "primitive": "Replay",
+      "role": "minimal_spine_12_field"
+    },
+    {
+      "primitive": "Workspace",
+      "role": "minimal_spine_12_field"
+    },
+    {
+      "primitive": "Validation",
+      "role": "minimal_spine_12_field"
+    },
+    {
+      "primitive": "Artifact",
+      "role": "minimal_spine_12_field"
+    },
+    {
+      "primitive": "State",
+      "role": "minimal_spine_12_field"
+    },
+    {
+      "primitive": "Audit",
+      "role": "minimal_spine_12_field"
+    },
+    {
+      "primitive": "Governance",
+      "role": "minimal_spine_12_field"
+    },
+    {
+      "primitive": "Authority",
+      "role": "minimal_spine_12_field"
+    }
+  ],
+  "summary": {
+    "minimal_spine_12_is_strict_subset": false,
+    "minimal_spine_12_only_count": 1,
+    "minimal_spine_12_only": [
+      "Replay"
+    ],
+    "overlap_count": 11,
+    "kernel20_only_count": 9
+  }
+}
